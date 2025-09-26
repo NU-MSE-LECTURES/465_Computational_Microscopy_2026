@@ -32,7 +32,6 @@ github_username: "NU-MSE-LECTURES"
 # Navigation
 header_pages:
   - index.md
-  - syllabus.md
   - schedule.md
   - assignments.md
   - resources.md

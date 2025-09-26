@@ -1,13 +1,20 @@
 ---
 layout: default
 title: Home
+hero:
+  title: "Advanced Computational Methods for Electron Microscopy"
+  description: "Master the intersection of electron microscopy, data science, and machine learning. Learn to analyze 4D-STEM data, implement computational simulations, and apply AI techniques to materials characterization."
+  buttons:
+    - text: "View Schedule"
+      url: "/schedule"
+      class: "btn-primary"
+    - text: "Assignments"
+      url: "/assignments"
+      class: "btn-secondary"
+    - text: "GitHub Repository"
+      url: "https://github.com/NU-MSE-LECTURES/465_Computational_Microscopy_2026"
+      class: "btn-outline"
 ---
-
-<div class="hero-section">
-  <h1>{{ site.course.number }}: {{ site.course.title }}</h1>
-  <p class="lead">{{ site.course.university }} • {{ site.course.semester }}</p>
-  <p class="subtitle">{{ site.course.school }}</p>
-</div>
 
 ## Course Overview
 

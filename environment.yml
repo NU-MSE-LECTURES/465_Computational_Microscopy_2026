@@ -1,0 +1,82 @@
+name: ms465-2026
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  # Core Python
+  - python=3.11
+  - pip
+  
+  # Scientific Computing
+  - numpy>=1.24
+  - scipy>=1.10
+  - matplotlib>=3.6
+  - pandas>=2.0
+  - scikit-learn>=1.3
+  - scikit-image>=0.20
+  
+  # Jupyter and Development
+  - jupyterlab>=4.0
+  - jupyter-lsp
+  - jupyterlab-git
+  - nb_conda_kernels
+  - ipywidgets
+  - tqdm
+  
+  # Data Management
+  - h5py>=3.8
+  - zarr
+  - dask
+  - xarray
+  
+  # Machine Learning and Deep Learning
+  - pytorch>=2.0
+  - torchvision
+  - tensorflow>=2.13
+  - keras
+  
+  # Visualization
+  - plotly
+  - bokeh
+  - seaborn
+  - mayavi
+  - imageio
+  - pillow
+  
+  # EM-Specific Libraries (via pip)
+  - pip:
+    - py4DSTEM>=0.14
+    - hyperspy>=1.7
+    - pyxem>=0.15
+    - ase>=3.22
+    - atomai>=1.3
+    - libertem>=0.11
+    - ncempy>=1.8
+    - stempy>=1.0
+    
+    # Additional ML/AI tools
+    - pytorch-lightning>=2.0
+    - optuna
+    - wandb
+    - tensorboard
+    
+    # Development and Testing
+    - pytest
+    - black
+    - flake8
+    - mypy
+    - pre-commit
+    
+    # GPU acceleration (if available)
+    - cupy-cuda11x; sys_platform != "darwin"
+    - cucim; sys_platform != "darwin"
+    
+    # Simulation software
+    - abtem>=1.0
+    - prismatic-python
+    
+    # Documentation
+    - sphinx
+    - sphinx-rtd-theme
+    - myst-parser

@@ -1,0 +1,90 @@
+# Site settings
+title: "MS 465: Computational Electron Microscopy"
+description: "Northwestern University - Winter Quarter 2026"
+baseurl: "/465_Computational_Microscopy_2026"
+url: "https://nu-mse-lectures.github.io"
+
+# Course information
+course:
+  number: "MS 465"
+  title: "Computational Electron Microscopy"
+  semester: "Winter Quarter 2026"
+  university: "Northwestern University"
+  school: "McCormick School of Engineering"
+  instructor: "Prof. Dr. Roberto dos Reis"
+  email: "roberto.reis@northwestern.edu"
+  office: "Tech AB Wing AG90"
+  office_hours: "Wednesday 1:00-3:00 PM, Friday 10:00-11:30 AM"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# GitHub Pages settings
+repository: "NU-MSE-LECTURES/465_Computational_Microscopy_2026"
+github_username: "NU-MSE-LECTURES"
+
+# Navigation
+header_pages:
+  - index.md
+  - syllabus.md
+  - schedule.md
+  - assignments.md
+  - resources.md
+
+# Collections for course content
+collections:
+  weeks:
+    output: true
+    permalink: /:collection/:name/
+  assignments:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "weeks"
+    values:
+      layout: "week"
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .env
+  - common_utilities/
+  - datasets/
+  - "*.ipynb"

@@ -4,6 +4,8 @@ January 19-23, 2026
 ## Overview
 This week covers fundamental image processing techniques for microscopy data analysis, including spatial and frequency-domain filtering, contrast enhancement, and classical segmentation methods. Students will learn to apply these techniques to real microscopy datasets and understand when to use each approach.
 
+Students will implement classical computer vision pipelines including noise reduction, contrast enhancement, morphological segmentation, and particle quantification. These skills form the foundation for comparing classical approaches with modern machine learning and deep learning methods in Week 4.
+
 ## Monday: Image Processing Foundations
 - Image filtering and noise reduction techniques
 - Real-space and FFT-based contrast enhancement

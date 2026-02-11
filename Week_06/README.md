@@ -19,6 +19,7 @@ Compute diffraction intensities using Bloch-wave model
 Week_06/
 ├── README.md           # This file
 ├── lectures/           # Lecture materials and notebooks
+│   └── lecture_6.1_dynamical_diffraction.ipynb  # Monday: Ewald Sphere & Bloch Waves
 ├── code_examples/      # Example code and scripts
 ├── exercises/          # Practice problems
 ├── assignments/        # Assignment descriptions and templates

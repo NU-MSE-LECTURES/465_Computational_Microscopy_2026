@@ -149,6 +149,12 @@ dmypy.json
 !Week_02/assignments/raw_data/*.tif
 !Week_02/assignments/raw_data/*.tiff
 
+# Allow tracked 4D-STEM data (managed by Git LFS)
+!data_4dstem/**/*.dm3
+!data_4dstem/**/*.dm4
+!data_4dstem/**/*.h5
+!data_4dstem/**/*.hdf5
+
 # Large datasets
 datasets/large_datasets/
 datasets/raw_data/
